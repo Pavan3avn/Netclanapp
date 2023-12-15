@@ -1,0 +1,247 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".refineactivity"
+    tools:ignore="ExtraText">
+
+    <TextView
+        android:id="@+id/textv1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/select_your_availability"
+        android:textSize="18sp"
+        android:textColor="@color/primary"
+        android:textAllCaps="false"
+        android:textStyle="bold"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="25dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        />
+
+    <Spinner
+        android:id="@+id/dropdownSpinner"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="25dp"
+        android:layout_marginTop="2dp"
+        android:layout_marginBottom="25dp"
+        android:layout_marginEnd="25dp"
+        android:background="@drawable/spinnerbg"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textv1"
+        app:layout_constraintBottom_toTopOf="@+id/textv2"
+        />
+
+        <TextView
+            android:id="@+id/textv2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/aboutyourself"
+            android:textStyle="bold"
+            android:textColor="@color/primary"
+            android:textSize="18sp"
+            android:layout_marginStart="25dp"
+            android:layout_marginTop="25dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/dropdownSpinner"/>
+
+    <EditText
+        android:id="@+id/edittv"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_marginStart="25dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="25dp"
+        android:background="@drawable/searchbackground"
+        android:maxLines="5"
+        android:textColor="@color/primary"
+        android:textSize="15sp"
+        android:textStyle="normal"
+        android:hint="@string/aboutyourself"
+        android:padding="5dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textv2" />
+
+
+    <TextView
+        android:id="@+id/textv4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/selectdistance"
+        android:textStyle="bold"
+        android:textColor="@color/primary"
+        android:textSize="18sp"
+        android:layout_marginStart="25dp"
+        android:layout_marginTop="25dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edittv"/>
+
+
+    <SeekBar
+        android:id="@+id/seekbar"
+        style="@style/Widget.AppCompat.SeekBar.Discrete"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="25dp"
+        android:layout_marginTop="28dp"
+        android:max="100"
+        android:progress="50"
+        android:progressTint="@color/primary"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textv4" />
+
+    <TextView
+        android:id="@+id/textv3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/Selectpupose"
+        android:textStyle="bold"
+        android:textColor="@color/primary"
+        android:textSize="18sp"
+        android:layout_marginStart="25dp"
+        android:layout_marginTop="25dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/seekbar"/>
+
+
+
+
+
+    <LinearLayout
+        android:id="@+id/linearlay"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="25dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="25dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textv3"
+        android:orientation="horizontal"
+        android:padding="5dp"
+        >
+        <Button
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:layout_margin="5dp"
+         android:background="@drawable/searchbackground"
+            android:textSize="16sp"
+            android:textColor="@color/primary"
+            android:text="Coffee"
+            android:padding="8dp"  />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:background="@drawable/searchbackground"
+            android:textSize="16sp"
+            android:text="Business"
+            android:textColor="@color/primary"
+            android:padding="8dp"  />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:background="@drawable/searchbackground"
+            android:textSize="16sp"
+            android:text="Hobbies"
+            android:textColor="@color/primary"
+            android:padding="8dp"  />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:background="@drawable/searchbackground"
+            android:textSize="16sp"
+            android:text="friendship"
+            android:textColor="@color/primary"
+            android:padding="8dp"  />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearlay2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="25dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="25dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearlay"
+        android:orientation="horizontal"
+        android:padding="5dp"
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:background="@drawable/searchbackground"
+            android:textSize="16sp"
+            android:text="Movies"
+            android:textColor="@color/primary"
+            android:padding="8dp"  />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:background="@drawable/searchbackground"
+            android:textSize="16sp"
+            android:text="Dinning"
+            android:textColor="@color/primary"
+            android:padding="8dp"  />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:background="@drawable/searchbackground"
+            android:textSize="16sp"
+            android:text="Dating"
+            android:textColor="@color/primary"
+            android:padding="8dp"  />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:background="@drawable/searchbackground"
+            android:onClick="@color/primary"
+            android:padding="8dp"
+            android:text="Matrimony"
+            android:textColor="@color/primary"
+            android:textSize="16sp" />
+    </LinearLayout>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:text="@string/save_explore"
+        android:textColor="@color/boxcolor"
+        android:textSize="20sp"
+        android:layout_margin="20dp"
+        android:background="@drawable/searchbackground"
+        android:backgroundTint="@color/primary"
+        android:paddingStart="8dp"
+        android:paddingEnd="8dp"
+        android:paddingVertical="5dp"
+        app:layout_constraintTop_toBottomOf="@+id/linearlay2"
+        />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">Netclan</string>
+    <string name="invite">+invite</string>
+    <string name="person_name">Person Name</string>
+    <string name="yp">PN</string>
+    <string name="city">city</string>
+    <string name="role">Role</string>
+    <string name="distance">within 200 - 300m</string>
+    <string name="purpose">purpose</string>
+    <string name="aboutyourself">About yourself</string>
+    <string name="select_your_availability">Select your Availability</string>
+    <string name="select">Select</string>
+    <string name="Selectpupose">Select purpose</string>
+    <string name="save_explore"><![CDATA[Save & explore]]></string>
+    <string name="selectdistance">Select Hyper local distance</string>
+</resources>
